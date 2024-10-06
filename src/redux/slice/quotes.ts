@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState = {
-    quotes: [] || null
+    getquo: [] || null
 }
 
 const quotesSlice = createSlice({
@@ -9,7 +9,7 @@ const quotesSlice = createSlice({
     initialState,
     reducers: {
         setQuotes: (state, action: PayloadAction<any>) => {
-            state.quotes = action.payload
+            state.getquo = action.payload
         }
     }
 })
